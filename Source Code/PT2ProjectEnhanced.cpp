@@ -24,7 +24,7 @@ public:
     void Receipt();
 };
 
-class SelectedItems : public Shopping
+class SelectedItems : public Shopping //class for inheritance for Edit() function
 {
     public :
     void Edit();
@@ -235,7 +235,7 @@ void Shopping :: Add()
     cout << "\n\n\t\t Record Inserted !";
 }
 
-void Shopping :: Edit()
+void Shopping :: Edit() //Inheritance
 {
     fstream data, data1;
     int pkey;
