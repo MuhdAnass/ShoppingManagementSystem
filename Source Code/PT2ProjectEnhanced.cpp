@@ -24,6 +24,12 @@ public:
     void Receipt();
 };
 
+class SelectedItems : public Shopping
+{
+    public :
+    void Edit();
+};
+
 void Shopping :: Menu()
 {
     m:
@@ -294,6 +300,13 @@ void Shopping :: Edit()
     }
 }
 
+void SelectedItems::Edit()
+{
+    Shopping::Edit();
+}
+
+
+
 void Shopping :: Delete()
 {
     fstream data, data1;
@@ -439,5 +452,10 @@ void Shopping::Receipt()
 int main()
 {
     Shopping p;
+
+    SelectedItems n;
+
     p.Menu();
+    p.Edit();
+    n.Edit();
 }
