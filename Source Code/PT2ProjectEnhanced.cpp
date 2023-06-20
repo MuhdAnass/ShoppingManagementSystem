@@ -453,9 +453,5 @@ int main()
 {
     Shopping p;
 
-    SelectedItems n;
-
     p.Menu();
-    p.Edit();
-    n.Edit();
 }
